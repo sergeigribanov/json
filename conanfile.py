@@ -4,7 +4,7 @@ from conan.tools.cmake import CMakeToolchain, CMake, cmake_layout, CMakeDeps
 
 
 class JsonRecipe(ConanFile):
-    name = "json"
+    name = "nlohmann_json"
     version = "3.11.2"
     generators = "CMakeToolchain"
     # Optional metadata
@@ -38,4 +38,4 @@ class JsonRecipe(ConanFile):
         cmake.install()
 
     def package_info(self):
-        self.cpp_info.libs = ["json"]
+        self.cpp_info.libs = ["nlohmann_json"]
