@@ -173,7 +173,7 @@ configure_file(
 )
 
 if(JSON_Install)
-    export (PACKAGE nlohmann_json)
+    export(PACKAGE nlohmann_json)
     install(
         DIRECTORY ${NLOHMANN_JSON_INCLUDE_BUILD_DIR}
         DESTINATION ${NLOHMANN_JSON_INCLUDE_INSTALL_DIR}
